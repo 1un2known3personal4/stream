@@ -1,3 +1,22 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = '1'
+client.on('ready', () => {
+  console.log('╔[════════════════════════════════════]╗');
+  console.log('')
+  console.log('            ╔[════════════]╗')
+  console.log('              Bot Is Online')
+  console.log('            ╚[════════════]╝')
+  console.log('')
+  console.log(`Logged in as ${client.user.tag}!`);
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log('')
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log('')
+  console.log('╚[════════════════════════════════════]╝')
+});
+
 const developers = ["316324088865882142"]
 const adminprefixe = ".";
 client.on('message', message => {
